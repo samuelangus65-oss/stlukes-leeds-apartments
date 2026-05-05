@@ -980,6 +980,7 @@
     <li><a href="#about">The Apartment</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#location">Location</a></li>
+    <li><a href="#eating">Eating &amp; Shopping</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#book" class="nav-cta">Book Direct</a></li>
   </ul>
@@ -1433,11 +1434,111 @@
           <textarea class="form-textarea" placeholder="Arrival time, purpose of visit, anything else we should know..."></textarea>
         </div>
       </div>
-      <p class="form-note">By submitting this form you agree to be contacted regarding your enquiry. Secure card payment via Stripe on confirmation.<br><br>
-A fully refundable security deposit of <strong style="color:rgba(255,255,255,0.6);">£350</strong> is required at the time of booking and will be refunded within <strong style="color:rgba(255,255,255,0.6);">48 hours of check-out</strong>, subject to the apartment being left in good order. We inspect and clean the apartment promptly after every stay.<br><br>
-We respond to all enquiries promptly. Direct bookings receive our best available rate with no OTA fees or hidden charges.</p>
-      <button class="btn-submit" onclick="submitBooking()">Send Booking Enquiry</button>
+            <!-- TWO STEP BOOKING PROCESS -->
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(226,181,58,0.2);padding:24px;margin-bottom:20px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;">
+          <div>
+            <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px;">Step 1</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);margin-bottom:8px;">Send Your Enquiry</div>
+            <p style="font-size:12px;color:rgba(255,255,255,0.4);line-height:1.7;">Complete the form above with your dates and details. We will confirm availability and send you a booking confirmation within 2 hours.</p>
+          </div>
+          <div>
+            <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px;">Step 2</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--white);margin-bottom:8px;">Pay Security Deposit</div>
+            <p style="font-size:12px;color:rgba(255,255,255,0.4);line-height:1.7;">A fully refundable £350 security deposit secures your booking. Refunded within 48 hours of check-out subject to the apartment being left in good order.</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:11px;color:rgba(255,255,255,0.3);margin-bottom:24px;line-height:1.7;">By submitting this form you agree to be contacted regarding your enquiry. Direct bookings receive our best available rate with no OTA fees or hidden charges. Minimum guest age 23.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <button class="btn-submit" onclick="submitBooking()">Send Booking Enquiry</button>
+        <a href="https://buy.stripe.com/fZu00c2xt6NadFtcFM93y00" target="_blank" style="display:block;padding:18px;background:transparent;border:1px solid rgba(226,181,58,0.4);color:var(--gold-light);font-family:'Jost',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;text-align:center;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.background='rgba(226,181,58,0.1)'" onmouseout="this.style.background='transparent'">Pay £350 Deposit &rarr;</a>
+      </div>
     </div>
+  </div>
+</section>
+
+
+<!-- EATING & SHOPPING -->
+<section id="eating" style="background:var(--white);padding:100px 48px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;">
+      <p class="section-eyebrow">Local Area</p>
+      <h2 class="section-title">Eating &amp; <em>Shopping</em></h2>
+      <div class="gold-rule" style="margin:24px auto;"></div>
+      <p class="section-body" style="margin:0 auto;text-align:center;">Everything you need for a comfortable stay is within easy walking distance of The Savile. From budget supermarkets to local restaurants — you are well catered for.</p>
+    </div>
+
+    <!-- SUPERMARKETS -->
+    <div style="margin-bottom:56px;">
+      <p class="section-eyebrow" style="margin-bottom:24px;">Supermarkets</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+
+        <div style="border:1px solid var(--border);padding:32px 28px;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold-light)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+          <div style="font-size:32px;margin-bottom:16px;">🛒</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Lidl</div>
+          <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.05em;margin-bottom:12px;">~10 min walk</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Harrogate Road, Chapel Allerton LS7. Open Mon–Sat 8am–10pm, Sun 10am–4pm. Great value everyday essentials.</p>
+        </div>
+
+        <div style="border:1px solid var(--border);padding:32px 28px;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold-light)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+          <div style="font-size:32px;margin-bottom:16px;">🛒</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Aldi</div>
+          <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.05em;margin-bottom:12px;">~12 min walk</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Harrogate Road, Chapel Allerton LS7. Open Mon–Sat 8am–10pm, Sun 10am–4pm. Rated 4.4 stars by local shoppers.</p>
+        </div>
+
+        <div style="border:1px solid var(--border);padding:32px 28px;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold-light)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+          <div style="font-size:32px;margin-bottom:16px;">🛒</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Co-op</div>
+          <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.05em;margin-bottom:12px;">~12 min walk</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Stainbeck Lane, Chapel Allerton LS7. Open Mon–Sat 7am–10pm, Sun 10am–4pm. Convenient for recognised brands and top-up shops.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RESTAURANTS & TAKEAWAYS -->
+    <div>
+      <p class="section-eyebrow" style="margin-bottom:24px;">Restaurants &amp; Takeaways</p>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+
+        <div style="border:1px solid var(--border);padding:32px 28px;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold-light)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+            <div>
+              <div style="font-size:32px;margin-bottom:12px;">🍛</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);">Spice Chilli Hut</div>
+            </div>
+            <div style="background:var(--gold-pale);padding:8px 14px;text-align:center;flex-shrink:0;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold);">4.5</div>
+              <div style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light);">Google</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.05em;margin-bottom:12px;">~2 min walk · Indian &amp; Gujarati</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">189 Chapeltown Road LS7. Authentic Gujarati cuisine, highly rated by locals. Open daily 4pm–11pm. Perfect for a relaxed evening meal without leaving the neighbourhood.</p>
+        </div>
+
+        <div style="border:1px solid var(--border);padding:32px 28px;transition:all 0.3s;" onmouseover="this.style.borderColor='var(--gold-light)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateY(0)'">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
+            <div>
+              <div style="font-size:32px;margin-bottom:12px;">🍖</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);">Kalabash</div>
+            </div>
+            <div style="background:var(--gold-pale);padding:8px 14px;text-align:center;flex-shrink:0;">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--gold);">4.5</div>
+              <div style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light);">Google</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.05em;margin-bottom:12px;">~5 min walk · Authentic Caribbean</div>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">235 Chapeltown Road LS7. Authentic Caribbean food, loved by locals. Open Tue–Sun 12pm–10pm. Known for jerk chicken, rice and peas and generous portions at great prices.</p>
+        </div>
+
+      </div>
+      <p style="font-size:12px;color:var(--light);margin-top:20px;text-align:center;">Many more cafés, bars and restaurants are available along Chapeltown Road and in Chapel Allerton village, all within easy walking distance or a short bus ride.</p>
+    </div>
+
   </div>
 </section>
 
@@ -1502,6 +1603,7 @@ We respond to all enquiries promptly. Direct bookings receive our best available
   <ul class="footer-links">
     <li><a href="#about">The Apartment</a></li>
     <li><a href="#location">Location</a></li>
+    <li><a href="#eating">Eating &amp; Shopping</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#book">Book Direct</a></li>
   </ul>
