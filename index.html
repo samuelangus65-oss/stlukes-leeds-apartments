@@ -6,7 +6,7 @@
 <meta name="google-site-verification" content="F4OeQBArFEx5T6tCrjqbGAZXtgonyizNaEL13MpQkyQ" />
 <link rel="canonical" href="https://www.stlukesleedsapartments.co.uk">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="The Savile Leeds | St. Luke's Leeds Apartments"> 
+<meta property="og:title" content="The Savile Leeds | St. Luke's Leeds Apartments">
 <meta property="og:description" content="Boutique serviced apartment in Leeds LS7. Rated 9.1/10. 3 minutes from HOST & Pitman Training. Book direct for best rates.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.stlukesleedsapartments.co.uk">
@@ -955,7 +955,7 @@
   }
 
   .lightbox.active { display: flex; }
-  .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+  .lightbox img { max-width: 80vw; max-height: 85vh; object-fit: contain; }
   .lightbox-close {
     position: absolute;
     top: 24px; right: 32px;
@@ -966,6 +966,30 @@
     transition: opacity 0.3s;
   }
   .lightbox-close:hover { opacity: 1; }
+  .lightbox-prev, .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    font-size: 48px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    padding: 20px;
+    user-select: none;
+  }
+  .lightbox-prev { left: 20px; }
+  .lightbox-next { right: 20px; }
+  .lightbox-prev:hover, .lightbox-next:hover { opacity: 1; }
+  .lightbox-counter {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
   .loc-card:hover img { transform: scale(1.06); }
 </style>
 </head>
@@ -979,9 +1003,11 @@
   </div>
   <ul class="nav-links">
     <li><a href="#about">The Apartment</a></li>
+    <li><a href="#" onclick="toggleAbout(event)">About &amp; Area</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#location">Location</a></li>
     <li><a href="#eating">Eating &amp; Shopping</a></li>
+    <li><a href="#about-savile">About</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#book" class="nav-cta">Book Direct</a></li>
   </ul>
@@ -1405,34 +1431,11 @@
       <p style="font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.05em;">Book direct for our best available rate &mdash; no booking fees, no OTA commission.</p>
     </div>
     <div class="booking-form">
-      <div class="form-grid">
-        <div class="form-group">
-          <label class="form-label">Full Name</label>
-          <input class="form-input" type="text" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input class="form-input" type="email" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Check-In Date</label>
-          <input class="form-input" type="date">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Check-Out Date</label>
-          <input class="form-input" type="date">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Phone Number</label>
-          <input class="form-input" type="tel" placeholder="Your phone number">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Number of Guests</label>
-          <input class="form-input" type="number" placeholder="1 or 2" min="1" max="2">
-        </div>
-        <div class="form-group full">
-          <label class="form-label">Any Special Requests</label>
-          <textarea class="form-textarea" placeholder="Arrival time, purpose of visit, anything else we should know..."></textarea>
+      <!-- SMOOBU FULL BOOKING ENGINE -->
+      <div style="margin-bottom:32px;">
+        <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;">Check Availability &amp; Book Instantly</p>
+        <div style="width:100%;overflow:hidden;background:white;border-radius:4px;">
+          <div id="apartmentIframeAll"><script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script><script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/en/booking-tool/iframe/1737942", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframeAll"})</script></div>
         </div>
       </div>
             <!-- TWO STEP BOOKING PROCESS -->
@@ -1543,6 +1546,75 @@
   </div>
 </section>
 
+
+<!-- ABOUT THE SAVILE FULL PAGE -->
+<section id="about-savile" style="background:var(--cream);padding:100px 48px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <p class="section-eyebrow" style="text-align:center;">About The Savile</p>
+    <h2 class="section-title" style="text-align:center;">Everything you need to <em>know</em></h2>
+    <div class="gold-rule" style="margin:24px auto;"></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:48px;">
+      <div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--dark);margin-bottom:16px;">The Space</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.9;">Modern 1-bedroom apartment with superfast WiFi and free street parking near Leeds city centre. Ideal for couples, professionals and hospital visitors seeking a quiet, comfortable stay with easy access to transport and local amenities. Longer stays welcome — perfect for weekend breaks or multi-night business visits.</p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.9;margin-top:16px;">The apartment features a spacious living room with leather sofas and 40" Smart TV, a comfortable double bed with luxury linens, a fully equipped kitchen with oven, hob, microwave and full-size fridge freezer, and a dedicated workspace with desk and chair.</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--dark);margin-bottom:16px;">The Neighbourhood</h3>
+        <p style="font-size:14px;color:var(--mid);line-height:1.9;">Located within the Chapel Allerton area of Leeds, just 2 miles north of Leeds City Centre. Regular bus services along Chapeltown Road and Scott Hall Road connect you to central Leeds in minutes.</p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.9;margin-top:16px;">Guests will find supermarkets, cafés, takeaways and local shops within walking distance. St James's University Hospital, Leeds General Infirmary and the First Direct Arena are all within 2 miles.</p>
+        <p style="font-size:14px;color:var(--mid);line-height:1.9;margin-top:16px;">Leisure destinations such as Roundhay Park, Headingley Stadium and Elland Road Football Stadium are all within easy reach by car or public transport.</p>
+      </div>
+    </div>
+
+    <div style="background:var(--white);border:1px solid var(--border);padding:40px;margin-bottom:32px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--dark);margin-bottom:20px;">What Makes The Savile Special</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Perfect for HOST Business Hub (3 min walk), remote workers and Leeds trips</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">9.1/10 Guest Rating — top 20% of properties in Leeds</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Free street parking on a first-come basis</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Superfast WiFi and dedicated workspace</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Self check-in — 24/7 access, late arrivals always welcome</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Private rear decked terrace with built-in seating — exclusive guest use</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Professionally deep cleaned between every guest stay</p>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <span style="color:var(--gold);font-size:18px;margin-top:2px;">✦</span>
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;">Ideal for Pitman Training and HOST exam centre stays</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--dark);padding:40px;text-align:center;">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--white);margin-bottom:8px;">About St. Luke's Leeds Apartments</p>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;max-width:600px;margin:0 auto 24px;">Professionally managed serviced accommodation focused on our premium 1-bedroom property in Leeds LS7 — The Savile. We specialise in clean, comfortable stays for HOST Business Hub visitors, remote workers, contractors and couples. Established 2020 · Leeds LS7 focus since 2022.</p>
+      <a href="#book" style="display:inline-block;padding:14px 36px;background:var(--gold);color:var(--white);font-family:'Jost',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;">Book Direct Now</a>
+    </div>
+
+  </div>
+</section>
+
 <!-- HOUSE RULES -->
 <section style="background:var(--cream);padding:60px 48px;">
   <div style="max-width:900px;margin:0 auto;">
@@ -1597,14 +1669,53 @@
   </a>
 </div>
 
+<!-- ABOUT THE SAVILE FULL PAGE -->
+<section id="about-savile" style="background:var(--cream);padding:100px 48px;display:none;">
+  <div style="max-width:900px;margin:0 auto;">
+    <p class="section-eyebrow">About The Savile</p>
+    <h2 class="section-title">Everything you need to <em>know</em></h2>
+    <div class="gold-rule"></div>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--dark);margin:36px 0 16px;">The Property</h3>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);margin-bottom:16px;">Modern 1-bedroom apartment with superfast WiFi and free street parking near Leeds city centre. Ideal for couples, professionals and hospital visitors seeking a quiet, comfortable stay with easy access to transport and local amenities. Longer stays welcome — perfect for weekend breaks or multi-night business visits.</p>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);margin-bottom:16px;">Rated 9.1/10 by our guests and ranked in the top 20% of properties in Leeds, The Savile offers the comfort and privacy of your own home with the quality and care of a boutique stay.</p>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--dark);margin:36px 0 16px;">What You Will Love</h3>
+    <ul style="list-style:none;padding:0;margin:0 0 24px;">
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Perfect for HOST Business Hub (3 min walk), remote workers &amp; Leeds trips</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ 9.1/10 Guest Rating — top 20% Leeds</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Free street parking — first come basis</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Superfast WiFi + dedicated workspace</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Self check-in — 24/7 access, late arrivals welcome</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Spacious living room with leather sofas and 40" Smart TV</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Comfortable double bed with luxury linens</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Fully equipped kitchen — microwave, cookware, oven, hob, full-size fridge freezer</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);">✦ Private rear decked terrace with built-in seating</li>
+      <li style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);padding:8px 0;">✦ Ideal for Pitman Training &amp; HOST exam centre stays</li>
+    </ul>
+
+    <h3 style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--dark);margin:36px 0 16px;">The Neighbourhood</h3>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);margin-bottom:16px;">Located within the Chapel Allerton area of Leeds, just 2 miles north of Leeds City Centre. Regular bus services along Chapeltown Road and Scott Hall Road connect you to central Leeds in minutes.</p>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);margin-bottom:16px;">Guests will find supermarkets, cafés, takeaways and local shops within walking distance. St James's University Hospital, Leeds General Infirmary and the First Direct Arena are all within 2 miles.</p>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);margin-bottom:16px;">Leisure destinations such as Roundhay Park and Tropical World, Headingley Stadium and Elland Road Football Stadium are all within easy reach. The nearby Sheepscar business district and Norma Hutchinson Park are also within walking distance.</p>
+    <p style="font-size:15px;font-weight:300;line-height:1.85;color:var(--mid);">The Savile is just a 3 minute walk from Pitman Training, HOST and Leeds Media Centre — making it ideal for guests attending professional exams, training courses or media events.</p>
+
+    <div style="margin-top:48px;text-align:center;">
+      <a href="#book" onclick="document.getElementById('about-savile').style.display='none'" class="btn-primary">Book Your Stay</a>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">The Savile · St. Luke's Leeds Apartments</div>
   <div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:4px;letter-spacing:0.08em;">stlukesleedsapartments.co.uk</div>
   <ul class="footer-links">
     <li><a href="#about">The Apartment</a></li>
+    <li><a href="#" onclick="toggleAbout(event)">About &amp; Area</a></li>
     <li><a href="#location">Location</a></li>
     <li><a href="#eating">Eating &amp; Shopping</a></li>
+    <li><a href="#about-savile">About</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#book">Book Direct</a></li>
   </ul>
@@ -1612,25 +1723,75 @@
 </footer>
 
 <!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+<div class="lightbox" id="lightbox">
   <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <span class="lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
   <img id="lightbox-img" src="" alt="">
+  <span class="lightbox-next" onclick="changeImage(1)">&#10095;</span>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
 </div>
 
 <script>
+  function toggleAbout(e) {
+    e.preventDefault();
+    const section = document.getElementById("about-savile");
+    if (section.style.display === "none" || section.style.display === "") {
+      section.style.display = "block";
+      section.scrollIntoView({behavior: "smooth"});
+    } else {
+      section.style.display = "none";
+    }
+  }
+
+  // Lightbox with navigation
+  let galleryImages = [];
+  let currentImageIndex = 0;
+
+  function buildGallery() {
+    galleryImages = [];
+    document.querySelectorAll('.gallery-item img, [onclick*="openLightbox"] img').forEach(img => {
+      if (!galleryImages.find(i => i.src === img.src)) {
+        galleryImages.push({ src: img.src, alt: img.alt });
+      }
+    });
+  }
+
   function openLightbox(el) {
     const img = el.querySelector('img');
     if (!img) return;
-    document.getElementById('lightbox-img').src = img.src;
+    buildGallery();
+    currentImageIndex = galleryImages.findIndex(i => i.src === img.src);
+    if (currentImageIndex === -1) currentImageIndex = 0;
+    showImage(currentImageIndex);
     document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function showImage(index) {
+    if (galleryImages.length === 0) return;
+    currentImageIndex = (index + galleryImages.length) % galleryImages.length;
+    document.getElementById('lightbox-img').src = galleryImages[currentImageIndex].src;
+    document.getElementById('lightbox-img').alt = galleryImages[currentImageIndex].alt;
+    document.getElementById('lightbox-counter').textContent = (currentImageIndex + 1) + ' / ' + galleryImages.length;
+  }
+
+  function changeImage(direction) {
+    showImage(currentImageIndex + direction);
   }
 
   function closeLightbox() {
     document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
   }
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') changeImage(1);
+    if (e.key === 'ArrowLeft') changeImage(-1);
+  });
+
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this || e.target === document.getElementById('lightbox-img')) closeLightbox();
   });
 
   function submitBooking() {
