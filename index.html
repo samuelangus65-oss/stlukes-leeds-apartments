@@ -92,6 +92,24 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is parking free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, free on-street parking is available nearby on a first-come basis." } },
+    { "@type": "Question", "name": "How does self check-in work?", "acceptedAnswer": { "@type": "Answer", "text": "Check-in is via a secure lockbox, so guests can arrive whenever suits them, including late evenings. Check-in is from 15:00, check-out by 11:00." } },
+    { "@type": "Question", "name": "How far is HOST or Pitman Training?", "acceptedAnswer": { "@type": "Answer", "text": "Both are approximately 3 minutes' walk from The Savile." } },
+    { "@type": "Question", "name": "How far is St James's Hospital?", "acceptedAnswer": { "@type": "Answer", "text": "St James's University Hospital is approximately 1.3 miles away. Leeds General Infirmary (LGI) is around 2 miles away." } },
+    { "@type": "Question", "name": "Can I stay for several weeks?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, stays from 1 night up to 90 nights are welcome. For 30 nights or more, contact us directly for a tailored rate." } },
+    { "@type": "Question", "name": "Why should I book direct rather than through an OTA?", "acceptedAnswer": { "@type": "Answer", "text": "Booking direct gets the best available rate with no OTA booking fees, and guests deal directly with the people managing The Savile." } },
+    { "@type": "Question", "name": "How is payment protected?", "acceptedAnswer": { "@type": "Answer", "text": "All online payments are taken securely through Stripe." } },
+    { "@type": "Question", "name": "Is the security deposit refundable?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A fully refundable £350 security deposit is required, separate from the nightly rate, and refunded within 48 hours of check-out subject to the apartment being left in good order." } },
+    { "@type": "Question", "name": "What is the cancellation policy?", "acceptedAnswer": { "@type": "Answer", "text": "The flexible rate allows free cancellation up to 5 days before arrival. A non-refundable rate is also available at a reduced price." } },
+    { "@type": "Question", "name": "Can I contact you before booking?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, guests can message via WhatsApp, call, or email at any time before booking." } }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -126,12 +144,12 @@
   <img src="images/hero.jpg" alt="The Savile — luxury bedroom with mustard throw" class="hero-img">
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Savile Place · Leeds LS7 · Serviced Apartment</p>
-    <h1 class="hero-title">The<br><em>Savile</em></h1>
-    <p class="hero-subtitle">Your home from home in the heart of Leeds</p>
+    <p class="hero-eyebrow">The Savile · Chapel Allerton, Leeds LS7</p>
+    <h1 class="hero-title">A comfortable Leeds apartment,<br>right where you need to <em>be</em></h1>
+    <p class="hero-subtitle">3 minutes' walk from HOST &amp; Pitman · Free nearby parking · Fast WiFi · Self check-in</p>
     <div class="hero-actions">
-      <a href="#book" class="btn-primary">Book Direct — Best Rate</a>
-      <a href="#about" class="btn-outline">Explore the Apartment</a>
+      <a href="#book" class="btn-primary">Check Availability</a>
+      <a href="#why-book-direct" class="btn-outline">Why Book Direct</a>
     </div>
   </div>
   <div class="hero-scroll">
@@ -149,6 +167,36 @@
   <div class="trust-item"><span class="trust-item-icon">📶</span> Fast WiFi Throughout</div>
   <div class="trust-item"><span class="trust-item-icon">🌿</span> Private Terrace &amp; Garden</div>
 </div>
+
+<!-- WHY BOOK DIRECT -->
+<section class="features-section" id="why-book-direct">
+  <div class="features-header">
+    <p class="section-eyebrow" style="color:var(--gold-light);">Why Book Direct</p>
+    <h2 class="section-title" style="color:var(--white);">Skip the OTA, <em>book with us</em></h2>
+  </div>
+  <div class="features-grid" style="grid-template-columns:repeat(4,1fr);">
+    <div class="feature-card">
+      <span class="feature-icon">💷</span>
+      <div class="feature-title">Best Available Rate</div>
+      <p class="feature-desc">Our direct rate is always our best. No OTA booking fees added on top of your nightly rate.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">💬</span>
+      <div class="feature-title">Deal Directly With Us</div>
+      <p class="feature-desc">Questions before or during your stay? You are speaking directly with the people managing The Savile, not a call centre.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🔒</span>
+      <div class="feature-title">Secure Payment</div>
+      <p class="feature-desc">Online payment is taken securely through Stripe, the same trusted payment provider used by major UK retailers.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">📆</span>
+      <div class="feature-title">Flexible Longer Stays</div>
+      <p class="feature-desc">Staying for business, training, hospital visits or a longer relocation stay? Contact us directly for a tailored rate.</p>
+    </div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <div class="about" id="about">
@@ -508,6 +556,16 @@
   </div>
 </section>
 
+<!-- HOST TRUST -->
+<section style="background:var(--cream);padding:80px 48px;">
+  <div style="max-width:700px;margin:0 auto;text-align:center;">
+    <p class="section-eyebrow">Who You're Booking With</p>
+    <h2 class="section-title">Hosted by <em>Samuel &amp; Karen</em></h2>
+    <div class="gold-rule" style="margin:20px auto 24px;"></div>
+    <p class="section-body" style="margin:0 auto;">The Savile is independently managed by Samuel and Karen Angus through St. Luke's Leeds Apartments. We aim to provide clean, comfortable accommodation with straightforward communication before and throughout your stay.</p>
+  </div>
+</section>
+
 <!-- BOOKING -->
 <section class="booking-section" id="book">
   <div class="booking-inner">
@@ -550,13 +608,6 @@
       <p style="font-size:11px;color:rgba(255,255,255,0.3);text-align:center;letter-spacing:0.05em;">Saturday rates vary — higher pricing applies during major Leeds events, Headingley match days and First Direct Arena concerts.</p>
     </div>
     <div class="booking-form">
-      <!-- DEPOSIT NOTICE -->
-      <div style="background:rgba(226,181,58,0.1);border:1px solid rgba(226,181,58,0.3);padding:20px 24px;margin-bottom:24px;">
-        <p style="font-size:13px;color:rgba(255,255,255,0.9);line-height:1.8;text-align:center;">
-          <strong style="color:var(--gold-light);">Please note:</strong> A fully refundable <strong style="color:var(--gold-light);">£350 security deposit</strong> is required to complete your reservation. This is separate from your nightly rate and will be refunded in full within <strong style="color:var(--gold-light);">48 hours of check-out</strong>, subject to the apartment being left in good order. Payment is taken securely via Stripe.
-        </p>
-      </div>
-
       <!-- SMOOBU FULL BOOKING ENGINE -->
       <div style="margin-bottom:32px;">
         <p style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:16px;">Check Availability &amp; Book Instantly</p>
@@ -564,35 +615,61 @@
           <div id="apartmentIframeAll"><script type="text/javascript" src="https://login.smoobu.com/js/Settings/BookingToolIframe.js"></script><script>BookingToolIframe.initialize({"url": "https://login.smoobu.com/en/booking-tool/iframe/1737942", "baseUrl": "https://login.smoobu.com", "target": "#apartmentIframeAll"})</script></div>
         </div>
       </div>
-            <div style="margin-top:20px;background:rgba(226,181,58,0.12);border:2px solid rgba(226,181,58,0.5);padding:28px 32px;">
-        <div style="text-align:center;margin-bottom:16px;">
-          <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--gold-light);letter-spacing:0.05em;">How Booking Works</span>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;">
-          <div style="text-align:center;padding:16px;">
-            <div style="font-size:28px;margin-bottom:8px;">📅</div>
-            <div style="font-size:12px;font-weight:600;color:var(--gold-light);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Step 1</div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.6;">Select your dates and number of guests</div>
-          </div>
-          <div style="text-align:center;padding:16px;">
-            <div style="font-size:28px;margin-bottom:8px;">💳</div>
-            <div style="font-size:12px;font-weight:600;color:var(--gold-light);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Step 2</div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.6;">Pay your nightly rate securely via Stripe</div>
-          </div>
-          <div style="text-align:center;padding:16px;">
-            <div style="font-size:28px;margin-bottom:8px;">🔐</div>
-            <div style="font-size:12px;font-weight:600;color:var(--gold-light);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Step 3</div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.8);line-height:1.6;">Pay £350 refundable deposit to secure your booking</div>
-          </div>
-        </div>
-        <div style="border-top:1px solid rgba(226,181,58,0.2);padding-top:16px;text-align:center;">
-          <p style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8;">The £350 security deposit is <strong style="color:var(--gold-light);">fully refundable</strong> within 48 hours of check-out · Direct bookings get our best rate · No OTA fees · Minimum age 23</p>
-        </div>
-      </div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.4);text-align:center;line-height:1.8;">Your nightly rate is paid securely via Stripe. A fully refundable security deposit also applies, refunded within 48 hours of check-out. Full details in our <a href="#faq" style="color:var(--gold-light);text-decoration:underline;">FAQ</a> below.</p>
     </div>
   </div>
 </section>
 
+
+<!-- FAQ -->
+<section style="background:var(--cream);padding:100px 48px;" id="faq">
+  <div style="max-width:800px;margin:0 auto;">
+    <p class="section-eyebrow" style="text-align:center;">Frequently Asked</p>
+    <h2 class="section-title" style="text-align:center;">Before you <em>book</em></h2>
+    <div class="gold-rule" style="margin:20px auto 40px;"></div>
+
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Is parking free?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Yes, free on-street parking is available nearby on a first-come basis, a genuine advantage over hotel stays in Leeds for guests travelling by car.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">How does self check-in work?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Check-in is via a secure lockbox, so you can arrive whenever suits you, including late evenings. Clear instructions are provided in advance. Check-in is from 15:00, check-out by 11:00.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">How far is HOST or Pitman Training?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Both are approximately 3 minutes' walk from The Savile.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">How far is St James's Hospital?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">St James's University Hospital is approximately 1.3 miles away, a short bus ride or drive. Leeds General Infirmary (LGI) is around 2 miles away.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Can I stay for several weeks?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Yes, stays from 1 night up to 90 nights are welcome. For stays of 30 nights or more, contact us directly for a tailored rate.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Why should I book direct rather than through an OTA?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Booking direct gets you our best available rate with no OTA booking fees added on top, and you deal directly with the people managing The Savile, not a call centre, if you have any questions before or during your stay.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">How is my payment protected?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">All online payments are taken securely through Stripe, the same trusted payment provider used by major UK retailers.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Is the security deposit refundable?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Yes. A fully refundable £350 security deposit is required to complete your reservation, separate from your nightly rate. It is refunded in full within 48 hours of check-out, subject to the apartment being left in good order.</p>
+    </div>
+    <div style="margin-bottom:28px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">What is the cancellation policy?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Our flexible rate allows free cancellation up to 5 days before arrival. A non-refundable rate is also available at a reduced price.</p>
+    </div>
+    <div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--dark);margin-bottom:8px;">Can I contact you before booking?</h3>
+      <p style="font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);">Yes, message us on WhatsApp, call, or email any time before booking, contact details are below.</p>
+    </div>
+  </div>
+</section>
 
 <!-- EATING & SHOPPING -->
 <section id="eating" style="background:var(--white);padding:100px 48px;">
